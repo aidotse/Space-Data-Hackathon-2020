@@ -1,6 +1,8 @@
 # Space-Data-Hackathon-2020
+----
 
 Introduction
+
 The availability of large amounts of satellite imagery data through the European Copernicus project
 and open source platforms like the OpenDataCube (ODC) greatly bolsters the opportunities to apply
 classical machine learning and deep learning algorithms. These models can be employed to meet many
@@ -18,13 +20,14 @@ the most well known and widely applied version of these indices. It is calculate
 of the surface’s absorption of visible red light (Red), and Near InfraRed light (NIR). While healthy
 vegetation absorbs a large portion of light; it reflects back most of the infrared light. This is not the
 case for vegetation that is unhealthy or sparse. Formally, the index is calculated as follows:
-𝑁𝐷𝑉𝐼 =
-𝑁𝐼𝑅−𝑅𝑒𝑑
-𝑁𝐼𝑅+𝑅𝑒𝑑
+                                       𝑁𝐷𝑉𝐼 =𝑁𝐼𝑅−𝑅𝑒𝑑/𝑁𝐼𝑅+𝑅𝑒𝑑
+
 The resulting value is between minus one and one, where values below 0.1 indicate barren areas of
 rock, sand or snow; moderate values (0.2 to 0.3) indicate shrubs and grasslands; and high values (above
 0.6) indicate the presence of dense and healthy vegetation (such as rain forests).
 Goal
+
+
 The challenge has a two-fold task.
 1) The first part is a simple time-series prediction. Trend plots of an aggregate value, like the mean
 NDVI, are calculated for an Area of Interest for each available day in the series of satellite images,
@@ -37,16 +40,24 @@ surrounding area as well as earlier/later values for the given area.
 While for the tasks above it is enough to assume the obscured area is rectangular, as a bonus task to
 give you opportunity to demonstrate excellence, we ask you to make the analysis work for arbitrary
 shaped Areas of Interest (up to a few kilometers across).
+
 Task Description and Data
+
+
 Data to be used: satellite imagery data of Sweden that will be available to be queried through the
 OpenDataCube environment.
 Expected outcome and evaluation metric: predicted values for test data will be compared to ground
 truth values (here, the occlusion is artificial) in terms of Root Mean Square Error (RMSE)
+
+
 Requirements
+
 • Experience with programming (Python)
 • Basic knowledge of time-series prediction and image processing methods
 • Familiarity with some Open Data Cube examples for querying and visualising data
 (https://datacube-core.readthedocs.io/en/stable/user/guide.html)
+
+
 References
 https://www.harrisgeospatial.com/Learn/Whitepapers/WhitepaperDetail/ArtMID/17811/ArticleID/16162/Vegetation-Analysis-Using-Vegetation-Indices-in-ENVI
 (Vegetation Analysis: Using Vegetation Indices in ENVI, u.d.)
