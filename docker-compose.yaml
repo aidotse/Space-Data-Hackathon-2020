@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ssdl:
+    image: jcarlstedt/ssdl-febhack2020:2020-02-14-3
+    ports:
+      - "8888:8888"
+    volumes:
+      - ${PWD}:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - AWS_ACCESS_KEY_ID=2XMUI0MET47XRFP3R1Z6
+      - AWS_SECRET_ACCESS_KEY=XAqh4FkCdVjjC2T4KmXHOdd4EUhnYhWIF0JEO0C8
