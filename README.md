@@ -1,7 +1,7 @@
 # Space-Data-Hackathon-2020
 ----
 
-Introduction
+## Introduction
 
 The availability of large amounts of satellite imagery data through the European Copernicus project
 and open source platforms like the OpenDataCube (ODC) greatly bolsters the opportunities to apply
@@ -20,6 +20,7 @@ the most well known and widely applied version of these indices. It is calculate
 of the surface’s absorption of visible red light (Red), and Near InfraRed light (NIR). While healthy
 vegetation absorbs a large portion of light; it reflects back most of the infrared light. This is not the
 case for vegetation that is unhealthy or sparse. Formally, the index is calculated as follows:
+
                                        𝑁𝐷𝑉𝐼 =𝑁𝐼𝑅−𝑅𝑒𝑑/𝑁𝐼𝑅+𝑅𝑒𝑑
 
 The resulting value is between minus one and one, where values below 0.1 indicate barren areas of
@@ -41,8 +42,7 @@ While for the tasks above it is enough to assume the obscured area is rectangula
 give you opportunity to demonstrate excellence, we ask you to make the analysis work for arbitrary
 shaped Areas of Interest (up to a few kilometers across).
 
-Task Description and Data
-
+## Task Description and Data
 
 Data to be used: satellite imagery data of Sweden that will be available to be queried through the
 OpenDataCube environment.
@@ -50,7 +50,7 @@ Expected outcome and evaluation metric: predicted values for test data will be c
 truth values (here, the occlusion is artificial) in terms of Root Mean Square Error (RMSE)
 
 
-Requirements
+## Requirements
 
 • Experience with programming (Python)
 • Basic knowledge of time-series prediction and image processing methods
@@ -58,7 +58,7 @@ Requirements
 (https://datacube-core.readthedocs.io/en/stable/user/guide.html)
 
 
-References
+## References
 https://www.harrisgeospatial.com/Learn/Whitepapers/WhitepaperDetail/ArtMID/17811/ArticleID/16162/Vegetation-Analysis-Using-Vegetation-Indices-in-ENVI
 (Vegetation Analysis: Using Vegetation Indices in ENVI, u.d.)
 https://earthobservatory.nasa.gov/features/MeasuringVegetation
